@@ -1,0 +1,161 @@
+/* Global styles */
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* Header */
+
+header {
+	background-color: #f8f8f8;
+	padding: 20px;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+nav a {
+	margin-right: 20px;
+}
+
+/* Slider */
+
+#slider {
+	position: relative;
+}
+
+.slide-container {
+	display: flex;
+	overflow-x: scroll;
+	scroll-behavior: smooth;
+	scroll-snap-type: x mandatory;
+}
+
+.slide {
+	position: relative;
+	flex: 0 0 100%;
+	max-width: 100%;
+	scroll-snap-align: center;
+}
+
+.slide img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.caption {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(255, 255, 255, 0.9);
+	padding: 20px;
+	text-align: center;
+}
+
+.caption h2 {
+	margin-top: 0;
+}
+
+.caption p {
+	margin-bottom: 20px;
+}
+
+.caption a {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #333;
+	color: #fff;
+	border-radius: 25px;
+	transition: background-color 0.2s ease-in-out;
+}
+
+.caption a:hover {
+	background-color: #666;
+}
+
+.slider-nav {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.prev-btn,
+.next-btn {
+	background-color: rgba(255, 255, 255, 0.9);
+	color: #333;
+	border: none;
+	padding: 10px 20px;
+	font-size: 1.5em;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+	background-color: #333;
+	color: #fff;
+}
+
+.next-btn {
+	margin-right: 0;
+}
+
+/* Blog posts */
+
+.blog-posts {
+	max-width: 1200px;
+	margin: 50px auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.blog-posts article {
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+.blog-posts article h2 {
+	margin-top: 0;
+}
+
+.blog-posts article img {
+	display: block;
+	width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+}
+
+.blog-posts article p {
+	margin-bottom: 20px;
+}
+
+.blog-posts article a {
+	background-color: #333;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 25px;
+}
+
+.blog-posts article a:hover {
+	background-color: #666;
+}
